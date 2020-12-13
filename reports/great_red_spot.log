@@ -1,0 +1,121 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/usr/local/lib/python3.6/dist-packages/nbclient/client.py", line 1087, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.6/dist-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/local/lib/python3.6/dist-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.6/dist-packages/nbclient/client.py", line 541, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/usr/local/lib/python3.6/dist-packages/nbclient/client.py", line 832, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/usr/local/lib/python3.6/dist-packages/nbclient/client.py", line 740, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import plotly.io as pio
+#pio.renderers.default = "notebook"
+fig = df.plot.scatter(x="Year", y="GRS Length", color="Recorder",
+                      range_x=[1870, 2030], range_y=[10, 40],
+                      width=650, height=400)
+fig.update_layout(title={'text': "Great Red Spot Size", 'x':0.5, 'y':0.92})
+fig.update_traces(marker=dict(size=7))
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mValueError[0m                                Traceback (most recent call last)
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/axes/_axes.py[0m in [0;36m_parse_scatter_color_args[0;34m(c, edgecolors, kwargs, xshape, yshape, get_next_color_func)[0m
+[1;32m   4283[0m             [0;32mtry[0m[0;34m:[0m  [0;31m# Then is 'c' acceptable as PathCollection facecolors?[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 4284[0;31m                 [0mcolors[0m [0;34m=[0m [0mmcolors[0m[0;34m.[0m[0mto_rgba_array[0m[0;34m([0m[0mc[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   4285[0m                 [0mn_elem[0m [0;34m=[0m [0mcolors[0m[0;34m.[0m[0mshape[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/colors.py[0m in [0;36mto_rgba_array[0;34m(c, alpha)[0m
+[1;32m    293[0m     [0;32mfor[0m [0mi[0m[0;34m,[0m [0mcc[0m [0;32min[0m [0menumerate[0m[0;34m([0m[0mc[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 294[0;31m         [0mresult[0m[0;34m[[0m[0mi[0m[0;34m][0m [0;34m=[0m [0mto_rgba[0m[0;34m([0m[0mcc[0m[0;34m,[0m [0malpha[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    295[0m     [0;32mreturn[0m [0mresult[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/colors.py[0m in [0;36mto_rgba[0;34m(c, alpha)[0m
+[1;32m    176[0m     [0;32mif[0m [0mrgba[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m  [0;31m# Suppress exception chaining of cache lookup failure.[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 177[0;31m         [0mrgba[0m [0;34m=[0m [0m_to_rgba_no_colorcycle[0m[0;34m([0m[0mc[0m[0;34m,[0m [0malpha[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    178[0m         [0;32mtry[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/colors.py[0m in [0;36m_to_rgba_no_colorcycle[0;34m(c, alpha)[0m
+[1;32m    232[0m             [0;32mpass[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 233[0;31m         [0;32mraise[0m [0mValueError[0m[0;34m([0m[0;34m"Invalid RGBA argument: {!r}"[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0morig_c[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    234[0m     [0;31m# tuple color.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mValueError[0m: Invalid RGBA argument: 'Recorder'
+
+During handling of the above exception, another exception occurred:
+
+[0;31mValueError[0m                                Traceback (most recent call last)
+[0;32m<ipython-input-2-8e2d2bc2ce36>[0m in [0;36m<module>[0;34m[0m
+[1;32m      3[0m fig = df.plot.scatter(x="Year", y="GRS Length", color="Recorder",
+[1;32m      4[0m                       [0mrange_x[0m[0;34m=[0m[0;34m[[0m[0;36m1870[0m[0;34m,[0m [0;36m2030[0m[0;34m][0m[0;34m,[0m [0mrange_y[0m[0;34m=[0m[0;34m[[0m[0;36m10[0m[0;34m,[0m [0;36m40[0m[0;34m][0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 5[0;31m                       width=650, height=400)
+[0m[1;32m      6[0m [0mfig[0m[0;34m.[0m[0mupdate_layout[0m[0;34m([0m[0mtitle[0m[0;34m=[0m[0;34m{[0m[0;34m'text'[0m[0;34m:[0m [0;34m"Great Red Spot Size"[0m[0;34m,[0m [0;34m'x'[0m[0;34m:[0m[0;36m0.5[0m[0;34m,[0m [0;34m'y'[0m[0;34m:[0m[0;36m0.92[0m[0;34m}[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      7[0m [0mfig[0m[0;34m.[0m[0mupdate_traces[0m[0;34m([0m[0mmarker[0m[0;34m=[0m[0mdict[0m[0;34m([0m[0msize[0m[0;34m=[0m[0;36m7[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/pandas/plotting/_core.py[0m in [0;36mscatter[0;34m(self, x, y, s, c, **kwargs)[0m
+[1;32m   1497[0m             ...                       colormap='viridis')
+[1;32m   1498[0m         """
+[0;32m-> 1499[0;31m         [0;32mreturn[0m [0mself[0m[0;34m([0m[0mkind[0m[0;34m=[0m[0;34m"scatter"[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mx[0m[0;34m,[0m [0my[0m[0;34m=[0m[0my[0m[0;34m,[0m [0ms[0m[0;34m=[0m[0ms[0m[0;34m,[0m [0mc[0m[0;34m=[0m[0mc[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1500[0m [0;34m[0m[0m
+[1;32m   1501[0m     [0;32mdef[0m [0mhexbin[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mx[0m[0;34m,[0m [0my[0m[0;34m,[0m [0mC[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mreduce_C_function[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mgridsize[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/pandas/plotting/_core.py[0m in [0;36m__call__[0;34m(self, *args, **kwargs)[0m
+[1;32m    790[0m         [0;32mif[0m [0mkind[0m [0;32min[0m [0mself[0m[0;34m.[0m[0m_dataframe_kinds[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    791[0m             [0;32mif[0m [0misinstance[0m[0;34m([0m[0mdata[0m[0;34m,[0m [0mABCDataFrame[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 792[0;31m                 [0;32mreturn[0m [0mplot_backend[0m[0;34m.[0m[0mplot[0m[0;34m([0m[0mdata[0m[0;34m,[0m [0mx[0m[0;34m=[0m[0mx[0m[0;34m,[0m [0my[0m[0;34m=[0m[0my[0m[0;34m,[0m [0mkind[0m[0;34m=[0m[0mkind[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    793[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    794[0m                 [0;32mraise[0m [0mValueError[0m[0;34m([0m[0;34mf"plot kind {kind} can only be used for data frames"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/pandas/plotting/_matplotlib/__init__.py[0m in [0;36mplot[0;34m(data, kind, **kwargs)[0m
+[1;32m     59[0m             [0mkwargs[0m[0;34m[[0m[0;34m"ax"[0m[0;34m][0m [0;34m=[0m [0mgetattr[0m[0;34m([0m[0max[0m[0;34m,[0m [0;34m"left_ax"[0m[0;34m,[0m [0max[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     60[0m     [0mplot_obj[0m [0;34m=[0m [0mPLOT_CLASSES[0m[0;34m[[0m[0mkind[0m[0;34m][0m[0;34m([0m[0mdata[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 61[0;31m     [0mplot_obj[0m[0;34m.[0m[0mgenerate[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     62[0m     [0mplot_obj[0m[0;34m.[0m[0mdraw[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     63[0m     [0;32mreturn[0m [0mplot_obj[0m[0;34m.[0m[0mresult[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/pandas/plotting/_matplotlib/core.py[0m in [0;36mgenerate[0;34m(self)[0m
+[1;32m    261[0m         [0mself[0m[0;34m.[0m[0m_compute_plot_data[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    262[0m         [0mself[0m[0;34m.[0m[0m_setup_subplots[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 263[0;31m         [0mself[0m[0;34m.[0m[0m_make_plot[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    264[0m         [0mself[0m[0;34m.[0m[0m_add_table[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    265[0m         [0mself[0m[0;34m.[0m[0m_make_legend[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/pandas/plotting/_matplotlib/core.py[0m in [0;36m_make_plot[0;34m(self)[0m
+[1;32m    973[0m             [0mlabel[0m[0;34m=[0m[0mlabel[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    974[0m             [0mcmap[0m[0;34m=[0m[0mcmap[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 975[0;31m             [0;34m**[0m[0mself[0m[0;34m.[0m[0mkwds[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    976[0m         )
+[1;32m    977[0m         [0;32mif[0m [0mcb[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/__init__.py[0m in [0;36minner[0;34m(ax, data, *args, **kwargs)[0m
+[1;32m   1597[0m     [0;32mdef[0m [0minner[0m[0;34m([0m[0max[0m[0;34m,[0m [0;34m*[0m[0margs[0m[0;34m,[0m [0mdata[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1598[0m         [0;32mif[0m [0mdata[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1599[0;31m             [0;32mreturn[0m [0mfunc[0m[0;34m([0m[0max[0m[0;34m,[0m [0;34m*[0m[0mmap[0m[0;34m([0m[0msanitize_sequence[0m[0;34m,[0m [0margs[0m[0;34m)[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1600[0m [0;34m[0m[0m
+[1;32m   1601[0m         [0mbound[0m [0;34m=[0m [0mnew_sig[0m[0;34m.[0m[0mbind[0m[0;34m([0m[0max[0m[0;34m,[0m [0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/axes/_axes.py[0m in [0;36mscatter[0;34m(self, x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, verts, edgecolors, plotnonfinite, **kwargs)[0m
+[1;32m   4451[0m             self._parse_scatter_color_args(
+[1;32m   4452[0m                 [0mc[0m[0;34m,[0m [0medgecolors[0m[0;34m,[0m [0mkwargs[0m[0;34m,[0m [0mxshape[0m[0;34m,[0m [0myshape[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 4453[0;31m                 get_next_color_func=self._get_patches_for_fill.get_next_color)
+[0m[1;32m   4454[0m [0;34m[0m[0m
+[1;32m   4455[0m         [0;32mif[0m [0mplotnonfinite[0m [0;32mand[0m [0mcolors[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.6/dist-packages/matplotlib/axes/_axes.py[0m in [0;36m_parse_scatter_color_args[0;34m(c, edgecolors, kwargs, xshape, yshape, get_next_color_func)[0m
+[1;32m   4303[0m                         [0;34m"'c' argument must be a mpl color, a sequence of mpl "[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   4304[0m                         [0;34m"colors or a sequence of numbers, not {}."[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 4305[0;31m                             [0;34m.[0m[0mformat[0m[0;34m([0m[0mc[0m[0;34m)[0m  [0;31m# note: could be long depending on c[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   4306[0m                     )
+[1;32m   4307[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mValueError[0m: 'c' argument must be a mpl color, a sequence of mpl colors or a sequence of numbers, not ['Recorder'].
+ValueError: 'c' argument must be a mpl color, a sequence of mpl colors or a sequence of numbers, not ['Recorder'].
+
