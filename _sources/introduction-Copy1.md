@@ -1,6 +1,7 @@
-# Introduction
+# Training introduction
 
-MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
+This book contains information about the planet **Jupiter** - the fifth planet from the sun and the largest planet in the solar system!
+
 
 ```{figure} image.png
 ---
@@ -10,7 +11,7 @@ name: my-image
 Here is my image's caption!
 ```
 
-```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
+```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
 ---
 height: 300px
 name: jupiter-figure
