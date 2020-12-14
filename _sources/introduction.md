@@ -1,4 +1,6 @@
-# MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
+# About this training
+
+MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
 
 ```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
 ---
@@ -75,74 +77,41 @@ name: my-image
 
 
 
-# Thursday Jour4
+# Thursday 
 
-1h30 -> pause
-
-30-45 minutes : debrief veille
-
-Presentation Longread methodo + applications SV
+* Presentation Longread methodo + applications SV
 
 PAUSE
 
-Jupyter book bash
+* nanoplot
+* mapping reads ONT vs Genome ref avec minimap2 et un individu
 
-nanoplot
+## Deeply 
 
-mapping reads ONT vs Genome ref avec minimap2 et un individu
+* Sniffle (documentation par eux meme)
 
-Après midi
+* vcf sniffle / vcf SNP
 
-Sniffle (documentation par eux meme)
+* plotter carte densité SNP / SV
 
-vcf sniffle / vcf SNP
+# Wednesday
 
-plotter carte densité SNP / SV
-
-Jour5
-
-1h30 -> pause
-
-30-45 minutes : debrief veille
-
-principe Assemblage Short read / Longread Nucmer
+* principe Assemblage Short read / Longread Nucmer
 
 pause
 
-assemblage short read (abyss) / long read (raven)
+* assemblage short read (abyss) / long read (raven)
 
-Dgenies
+* Dgenies
 
-Applications : synthese techno short et long reads (pdf)
+* Applications : synthese techno short et long reads (pdf)
 
-Après midi
+## Deeply
 
 15 assembkages et comparaison (short/long read) -> essayer comprendre ce qui s ets passé pour l organisme
 
 synthèse 16h ?
 
-We can estimate the mass of Jupiter from the period and size of an object orbiting it. For example, we can use Jupiter's moon Callisto to estimate it's mass.
-
-Callisto's period: $p_{c}=16.7 days$
-
-Callisto's orbit radius: $r_{c}=1,900,000 km$
-
-Now, using [Kepler's Law](https://solarsystem.nasa.gov/resources/310/orbits-and-keplers-laws/) we can work out the mass of Jupiter.
-
-```{math}
-:label: eq1
-m_{j} \approx \frac{r_{c}}{p_{c}} \times 7.9 \times 10^{10}
-```
-
-```{math}
-:label: eq2
-m_{j} \approx 1.9 \times 10^{27} kg
-```
-
-
-```{margin} Did you know?
-Jupiter is 11.0x larger than Earth!
-```
 
 ## Linux
 
