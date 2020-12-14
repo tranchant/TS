@@ -4,7 +4,7 @@ This course MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSE
 
 ```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
 ---
-height: 150px
+height: 300px
 name: my-image
 ---
 ```
@@ -16,43 +16,52 @@ name: my-image
 * [vm](https://biosphere.france-bioinformatique.fr)
 * slack : link
 
-# Monday "Discovering the linux world throught jupyter world"
+
+# DAY 1 
 
 #### Discover the NGS world ! __link__
 
 ```{figure}  https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk
+---
+height: 100px
+name: my-image
+---
+```
+
+#### Discovering the linux world throught jupyter world
+###### ls cd pwd cat wc -l grep pipe
+###### introduire exemple exo applicatifs
+
+#### Deeply
+
+```{figure} https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg
 ---
 height: 150px
 name: my-image
 ---
 ```
 
-#### Practice !
-* ls cd pwd cat wc -l grep pipe
-* introduire exemple exo applicatifs
 
-#### Deeply
+###### exercices compter nb reads / fastq stat
 
-* exercices compter nb reads / fastq stat
+###### plot jupyter stat ?
 
-* plot jupyter stat ?
+###### quelles analyses ? gff - bedtools intersect localisation capture
 
-* quelles analyses ? gff - bedtools intersect localisation capture
-
-* Exercice qui tue/Bonus !!!! pipe
+###### Exercice qui tue/Bonus !!!! pipe
 
 
-# Tuesday "Mapping and call variant calling"
+# DAY 2
 
-#### Discover SNP calling methodology
+#### Discover the mapping and SNP calling methodology
 
-#### Practice !
+#### Let's practice !
 
-* mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP
+###### mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP
 
-* xplciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)
+###### xplciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)
 
-* Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
+###### Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
 
 #### Deeply
 

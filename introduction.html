@@ -179,8 +179,8 @@
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#monday-discovering-the-linux-world-throught-jupyter-world">
-   Monday “Discovering the linux world throught jupyter world”
+  <a class="reference internal nav-link" href="#day-1">
+   DAY 1
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -192,31 +192,82 @@
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#practice">
-     Practice !
+    <a class="reference internal nav-link" href="#discovering-the-linux-world-throught-jupyter-world">
+     Discovering the linux world throught jupyter world
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ls-cd-pwd-cat-wc-l-grep-pipe">
+       ls cd pwd cat wc -l grep pipe
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#introduire-exemple-exo-applicatifs">
+       introduire exemple exo applicatifs
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#deeply">
      Deeply
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercices-compter-nb-reads-fastq-stat">
+       exercices compter nb reads / fastq stat
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#plot-jupyter-stat">
+       plot jupyter stat ?
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#quelles-analyses-gff-bedtools-intersect-localisation-capture">
+       quelles analyses ? gff - bedtools intersect localisation capture
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercice-qui-tue-bonus-pipe">
+       Exercice qui tue/Bonus !!!! pipe
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tuesday-mapping-and-call-variant-calling">
-   Tuesday “Mapping and call variant calling”
+  <a class="reference internal nav-link" href="#day-2">
+   DAY 2
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#discover-snp-calling-methodology">
-     Discover SNP calling methodology
+    <a class="reference internal nav-link" href="#discover-the-mapping-and-snp-calling-methodology">
+     Discover the mapping and SNP calling methodology
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Practice !
+    <a class="reference internal nav-link" href="#let-s-practice">
+     Let’s practice !
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mapping-un-individu-gatk4-bwa-aln-sampe-picardtools-appel-snp">
+       mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#xplciation-tp-pipeline-a-faire-pour-les-15-individus-boucle-1-par-1">
+       xplciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gestionnaire-wf-nextflow-wf-crg-presentation-10-min-toggle">
+       Gestionnaire WF Nextflow WF CRG ? presentation 10 min -&gt; TOGGLE
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id3">
@@ -286,7 +337,7 @@
 <h1>About this training<a class="headerlink" href="#about-this-training" title="Permalink to this headline">¶</a></h1>
 <p>This course MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES offers …</p>
 <div class="figure align-default" id="my-image">
-<a class="reference internal image-reference" href="https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg"><img alt="https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg" src="https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg"><img alt="https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg" src="https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg" style="height: 300px;" /></a>
 </div>
 </div>
 <div class="section" id="environment">
@@ -298,43 +349,58 @@
 <li><p>slack : link</p></li>
 </ul>
 </div>
-<div class="section" id="monday-discovering-the-linux-world-throught-jupyter-world">
-<h1>Monday “Discovering the linux world throught jupyter world”<a class="headerlink" href="#monday-discovering-the-linux-world-throught-jupyter-world" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="day-1">
+<h1>DAY 1<a class="headerlink" href="#day-1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="discover-the-ngs-world-link">
 <h2>Discover the NGS world ! <strong>link</strong><a class="headerlink" href="#discover-the-ngs-world-link" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk"><img alt="https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk" src="https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk"><img alt="https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk" src="https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk" style="height: 100px;" /></a>
 </div>
 </div>
-<div class="section" id="practice">
-<h2>Practice !<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>ls cd pwd cat wc -l grep pipe</p></li>
-<li><p>introduire exemple exo applicatifs</p></li>
-</ul>
+<div class="section" id="discovering-the-linux-world-throught-jupyter-world">
+<h2>Discovering the linux world throught jupyter world<a class="headerlink" href="#discovering-the-linux-world-throught-jupyter-world" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ls-cd-pwd-cat-wc-l-grep-pipe">
+<h3>ls cd pwd cat wc -l grep pipe<a class="headerlink" href="#ls-cd-pwd-cat-wc-l-grep-pipe" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="introduire-exemple-exo-applicatifs">
+<h3>introduire exemple exo applicatifs<a class="headerlink" href="#introduire-exemple-exo-applicatifs" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 <div class="section" id="deeply">
 <h2>Deeply<a class="headerlink" href="#deeply" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>exercices compter nb reads / fastq stat</p></li>
-<li><p>plot jupyter stat ?</p></li>
-<li><p>quelles analyses ? gff - bedtools intersect localisation capture</p></li>
-<li><p>Exercice qui tue/Bonus !!!! pipe</p></li>
-</ul>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg"><img alt="https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg" src="https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg" style="height: 150px;" /></a>
+</div>
+<div class="section" id="exercices-compter-nb-reads-fastq-stat">
+<h3>exercices compter nb reads / fastq stat<a class="headerlink" href="#exercices-compter-nb-reads-fastq-stat" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="plot-jupyter-stat">
+<h3>plot jupyter stat ?<a class="headerlink" href="#plot-jupyter-stat" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="quelles-analyses-gff-bedtools-intersect-localisation-capture">
+<h3>quelles analyses ? gff - bedtools intersect localisation capture<a class="headerlink" href="#quelles-analyses-gff-bedtools-intersect-localisation-capture" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="exercice-qui-tue-bonus-pipe">
+<h3>Exercice qui tue/Bonus !!!! pipe<a class="headerlink" href="#exercice-qui-tue-bonus-pipe" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
-<div class="section" id="tuesday-mapping-and-call-variant-calling">
-<h1>Tuesday “Mapping and call variant calling”<a class="headerlink" href="#tuesday-mapping-and-call-variant-calling" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="discover-snp-calling-methodology">
-<h2>Discover SNP calling methodology<a class="headerlink" href="#discover-snp-calling-methodology" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="id2">
-<h2>Practice !<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP</p></li>
-<li><p>xplciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)</p></li>
-<li><p>Gestionnaire WF Nextflow WF CRG ? presentation 10 min -&gt; TOGGLE</p></li>
-</ul>
+<div class="section" id="day-2">
+<h1>DAY 2<a class="headerlink" href="#day-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="discover-the-mapping-and-snp-calling-methodology">
+<h2>Discover the mapping and SNP calling methodology<a class="headerlink" href="#discover-the-mapping-and-snp-calling-methodology" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="let-s-practice">
+<h2>Let’s practice !<a class="headerlink" href="#let-s-practice" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mapping-un-individu-gatk4-bwa-aln-sampe-picardtools-appel-snp">
+<h3>mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP<a class="headerlink" href="#mapping-un-individu-gatk4-bwa-aln-sampe-picardtools-appel-snp" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="xplciation-tp-pipeline-a-faire-pour-les-15-individus-boucle-1-par-1">
+<h3>xplciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)<a class="headerlink" href="#xplciation-tp-pipeline-a-faire-pour-les-15-individus-boucle-1-par-1" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="gestionnaire-wf-nextflow-wf-crg-presentation-10-min-toggle">
+<h3>Gestionnaire WF Nextflow WF CRG ? presentation 10 min -&gt; TOGGLE<a class="headerlink" href="#gestionnaire-wf-nextflow-wf-crg-presentation-10-min-toggle" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 <div class="section" id="id3">
 <h2>Deeply<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
