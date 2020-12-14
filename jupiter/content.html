@@ -50,9 +50,9 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -95,31 +95,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../day1.html">
    Day 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../day1.html#program">
-   Program
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../day1.html#contributing">
-   Contributing
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../day1.html#creators">
-   Creators
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../day1.html#thank">
-   Thank
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../day1.html#copyright-and-license">
-   Copyright and license
   </a>
  </li>
  <li class="toctree-l1">
@@ -209,7 +184,7 @@ covers a few tips for how to do so.</p>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "None/None",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {

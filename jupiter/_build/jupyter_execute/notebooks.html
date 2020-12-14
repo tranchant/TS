@@ -50,9 +50,9 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -95,31 +95,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../../day1.html">
    Day 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../day1.html#program">
-   Program
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../day1.html#contributing">
-   Contributing
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../day1.html#creators">
-   Creators
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../day1.html#thank">
-   Thank
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../day1.html#copyright-and-license">
-   Copyright and license
   </a>
  </li>
  <li class="toctree-l1">
@@ -186,6 +161,23 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/tranchant/TS/master?urlpath=tree/jupiter/_build/jupyter_execute/notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
 
     </div>
 
@@ -302,7 +294,7 @@ with your book. For more information about this, see <a class="reference externa
     {
         requestKernel: true,
         binderOptions: {
-            repo: "None/None",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {
