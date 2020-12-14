@@ -1,6 +1,6 @@
 # About this training
 
-MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
+This course MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES offers ...
 
 ```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
 ---
@@ -18,7 +18,7 @@ name: my-image
 
 # Monday "Discovering the linux world throught jupyter world"
 
-## Discover the NGS world ! __link__
+#### Discover the NGS world ! __link__
 
 ```{figure}  https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk
 ---
@@ -27,11 +27,11 @@ name: my-image
 ---
 ```
 
-## Practice !
+#### Practice !
 * ls cd pwd cat wc -l grep pipe
 * introduire exemple exo applicatifs
 
-## Deeply
+#### Deeply
 
 * exercices compter nb reads / fastq stat
 
@@ -44,9 +44,9 @@ name: my-image
 
 # Tuesday "Mapping and call variant calling"
 
-## Discover SNP calling methodology
+#### Discover SNP calling methodology
 
-## Practice !
+#### Practice !
 
 * mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP
 
@@ -54,7 +54,7 @@ name: my-image
 
 * Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
 
-## Deeply
+#### Deeply
 
 * TP Pipeline (canveas : boucle, TOGGLe)
 
@@ -69,7 +69,7 @@ name: my-image
 
 * snmf
 
-## Deeply
+#### Deeply
 
 * Canveas : ACP code R
 
@@ -86,13 +86,15 @@ PAUSE
 * nanoplot
 * mapping reads ONT vs Genome ref avec minimap2 et un individu
 
-## Deeply 
+#### Deeply 
 
 * Sniffle (documentation par eux meme)
 
 * vcf sniffle / vcf SNP
 
 * plotter carte densité SNP / SV
+
+
 
 # Wednesday
 
@@ -106,11 +108,13 @@ pause
 
 * Applications : synthese techno short et long reads (pdf)
 
-## Deeply
+#### Deeply
 
 15 assembkages et comparaison (short/long read) -> essayer comprendre ce qui s ets passé pour l organisme
 
 synthèse 16h ?
+
+
 
 
 ## Linux
