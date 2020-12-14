@@ -22,7 +22,6 @@ name: imgHW
 ---
 ```
 
-
 * exercices compter nb reads / fastq stat
 
 * plot jupyter stat ?
@@ -30,5 +29,3 @@ name: imgHW
 * quelles analyses ? gff - bedtools intersect localisation capture
 
 * Exercice qui tue/Bonus !!!! pipe
-
-------------------------------------------------------------
