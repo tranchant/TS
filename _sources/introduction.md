@@ -1,128 +1,81 @@
-# Introduction
+# MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
 
-MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
-
-```{figure} image.png
+```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
 ---
 height: 150px
 name: my-image
 ---
-Here is my image's caption!
 ```
 
-```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
----
-height: 300px
-name: jupiter-figure
----
-The beautiful planet Jupiter!
-
-Jupiter has a mass of:  $m_{j} \approx 1.9 \times 10^{27} kg$
-
-$$
-  m_{j} \approx 1.9 \times 10^{27} kg
-$$
-
-```{math}
-:label: my_label
-m_{j} \approx 1.9 \times 10^{27} kg
-```
-
-## Environment
+# Environment
 
 * Linux 
 * Bioinformatics tool 
-* https://biosphere.france-bioinformatique.f
-* slack :
-
-## Program 
+* [vm](https://biosphere.france-bioinformatique.fr)
+* slack : link
 
 # Monday "Discovering the linux world throught jupyter world"
 
+## Discover the NGS world ! __link__
 
-1h30 -> pause
+```{figure}  https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk
+---
+height: 150px
+name: my-image
+---
+```
 
-Présentation formations / formateurs
+## Practice !
+* ls cd pwd cat wc -l grep pipe
+* introduire exemple exo applicatifs
 
-Préambule : lancement machine virtuelle -> garder vm allumée
+## Deeply
 
-attentes participants
+* exercices compter nb reads / fastq stat
 
-Présentation/cours ~45 min
+* plot jupyter stat ?
 
-Méthodo de séquençage rapide
+* quelles analyses ? gff - bedtools intersect localisation capture
 
-cas d'applications
+* Exercice qui tue/Bonus !!!! pipe
 
-1h15 post - pause
 
-Lancement jupyter book bash ~ 1heure
+# Tuesday "Mapping and call variant calling"
 
-commencer avec linux : ls cd pwd cat wc -l grep pipe
+## Discover SNP calling methodology
 
-introduire exemple exo applicatifs
+## Practice !
 
-Après midi
+* mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP
 
-Linux
+* xplciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)
 
-exercices compter nb reads / fastq stat
+* Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
 
-plot jupyter stat ?
+## Deeply
 
-quelles analyses ? gff - bedtools intersect localisation capture
+* TP Pipeline (canveas : boucle, TOGGLe)
 
-Exercice qui tue/Bonus !!!! pipe
+* 15 vcfs, puis 1 vcf final
 
-Jour2
 
-1h30 -> pause
+# Wednesday 
 
-30-45 minutes : debrief veille
+* Visualisation bam indiv 13/14 TABLET
 
-Présentation Mapping ? format rapide ? - 30 minutes ? sam . flagstat (page liens outils url) - appel SNP (format vcf)
+* SNP filtering
 
-PAUSE
+* snmf
 
-Jupyter book bash
+## Deeply
 
-mapping un individu GATK4 * bwa aln/sampe / picardtools / appel SNP
+* Canveas : ACP code R
 
-explciation TP Pipeline à faire pour les 15 individus (boucle / 1 par 1)
+* plot variant snp (densité filtré / non filtré)
 
-Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
 
-Après midi
 
-TP Pipeline (canveas : boucle, TOGGLe)
-
-15 vcfs, puis 1 vcf final
-
-Jour3
-
-1h30 -> pause
-
-30-45 minutes : debrief veille
-
-Visualisation bam indiv 13/14 TABLET
-
-PAUSE
-
-Jupyter book bash
-
-SNP filtering
-
-ACP code R ?
-
-snmf
-
-Après midi
-
-Canveas : ACP code R
-
-plot variant snp (densité filtré / non filtré)
-
-Jour4
+# Thursday Jour4
 
 1h30 -> pause
 
