@@ -11,8 +11,8 @@ name: imgCof
 
 ###### Discovering the linux world throught jupyter world
 
-* ls cd pwd cat wc -l grep pipe
-* introduire exemple exo applicatifs
+* Slides : !linuxslides.slides.html
+* jupyter book:
 
 
 ```{figure} https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg
