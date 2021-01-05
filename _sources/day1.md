@@ -11,7 +11,7 @@ name: imgCof
 
 ###### Discovering the linux world throught jupyter world
 
-* [Linux Slides](https://tranchant.github.io/TS/linuxslides.slides.html)
+* [Linux Slides](https://tranchant.github.io/TS/linuxSlides.slides.html)
 * jupyter book:
 
 
