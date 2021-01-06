@@ -5,7 +5,7 @@
 * Discover the NGS world ! 
 * Discovering the linux world throught jupyter world 
 
-#### Day 2 
+##### Day 2 
 
 * Discover the mapping and SNP calling methodology
 
@@ -15,7 +15,7 @@
 
 * Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
 
-#### Day 3 
+##### Day 3 
 
 * Vizualiazation of an alignment file with TABLET
 
@@ -23,7 +23,7 @@
 
 * snmf
 
-#### Day 4  
+##### Day 4  
 
 * Long reads introduction with somme practical use case 
 
