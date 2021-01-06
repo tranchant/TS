@@ -23,6 +23,6 @@ name: imgHW
 ---
 ```
 
-* Practical : [Linux practice 1](https://tranchant.github.io/TS/daY1/linuxHomework)
+* Practical : [Linux practice 1](https://tranchant.github.io/TS/day1/linuxHomework)
 
 
