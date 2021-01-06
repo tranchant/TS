@@ -2,19 +2,6 @@
 
 This course MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES offers ...
 
-```{figure} https://www.transmittingscience.com/wp-content/uploads/2019/09/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpg
----
-height: 200px
-name: imgTS
----
-```
-
-# Environment
-
-* Linux 
-* Bioinformatics tool 
-* [vm](https://biosphere.france-bioinformatique.fr)
-* slack : link
 
 ------------------------------------------------------------
 
@@ -55,10 +42,22 @@ name: imgTS
 
 ------------------------------------------------------------
 
+# Environment
+
+* Linux 
+* Bioinformatics tool 
+* [vm](https://biosphere.france-bioinformatique.fr)
+* slack : link
+
+
 # Contributing
+------------------------------------------------------------
 
 # Creators
+------------------------------------------------------------
 
 # Thank
+------------------------------------------------------------
 
 # Copyright and license 
+
