@@ -1,4 +1,4 @@
-# Day 2
+# Lesson2 
 
 ###### Openning session
 
