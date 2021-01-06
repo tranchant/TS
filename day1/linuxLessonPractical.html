@@ -142,6 +142,22 @@
    Linux command syntax
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#your-first-command-pwd">
+   Your first command
+   <em>
+    pwd
+   </em>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#nd-command-ls">
+   2nd command
+   <em>
+    ls
+   </em>
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -272,6 +288,22 @@
    Linux command syntax
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-first-command-pwd">
+   Your first command
+   <em>
+    pwd
+   </em>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nd-command-ls">
+   2nd command
+   <em>
+    ls
+   </em>
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -291,19 +323,30 @@
 <div class="section" id="linux-command-syntax">
 <h1>Linux command syntax<a class="headerlink" href="#linux-command-syntax" title="Permalink to this headline">¶</a></h1>
 <p>command [ -options] [ arguments ]</p>
+</div>
+<div class="section" id="your-first-command-pwd">
+<h1>Your first command <em>pwd</em><a class="headerlink" href="#your-first-command-pwd" title="Permalink to this headline">¶</a></h1>
+<p><strong>pwd</strong> print the name of the curent directory (the full path)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+cd /home/christine/Documents/Formation/TS/Home
 pwd
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/christine/TS/day1
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/christine/Documents/Formation/TS/Home
 </pre></div>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="nd-command-ls">
+<h1>2nd command <em>ls</em><a class="headerlink" href="#nd-command-ls" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>without argument : list all the files in the current directory (by default)</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> rpy2.ipython
