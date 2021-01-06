@@ -1,63 +1,21 @@
-# About this training
+# Home
 
-This course MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES offers ...
+MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES 
 
+This course offers ...
 
-------------------------------------------------------------
+This course will be delivered live online
 
-# Program
-
-##### Day 1 
-
-* Discover the NGS world ! 
-* Discovering the linux world throught jupyter world 
-
-#### Day 2 
-
-* Discover the mapping and SNP calling methodology
-
-* Mapping & SNP calling on one sample
-
-* Mapping and SNP calling on several samples 
-
-* Gestionnaire WF Nextflow WF CRG ? presentation 10 min -> TOGGLE
-
-#### Day 3 
-
-* Vizualiazation of an alignment file with TABLET
-
-* SNP filtering
-
-* snmf
-
-#### Day 4  
-
-* Long reads introduction with somme practical use case 
-
-* Mapping reads ONT vs Genome ref avec minimap2 et un individu
-
-* SV detection with SNIFFLE
-
-* Shorst & Long reads assembly 
-
-------------------------------------------------------------
-
-# Environment
-
-* Linux 
-* Bioinformatics tool 
-* [vm](https://biosphere.france-bioinformatique.fr)
-* slack : link
+Online live sessions from Monday, January 18th to Friday, January 22nd, 2021; 13:00 to 17:00 (GMT+1, Madrid time zone).
 
 
-# Contributing
-------------------------------------------------------------
+## REQUIREMENTS
 
-# Creators
-------------------------------------------------------------
+Graduate or postgraduate degree in Biomedical or Life Sciences. All participants must bring their own personal laptop with the following software installed: Putty (Windows only), Filezilla and Komodo Edit. Webcam and headphones are strongly recommended, and a good internet connection.
 
-# Thank
-------------------------------------------------------------
+## Contact
 
-# Copyright and license 
+courses@transmittingscience.com
 
+## More information
+[](https://www.transmittingscience.com/courses/genetics-and-genomics/manipulation-ngs-data-genomic-population-genetics-analyses/)
