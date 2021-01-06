@@ -158,6 +158,24 @@
    </em>
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#nd-command-option-ls-l">
+   2nd command + option
+   <em>
+    ls -l
+   </em>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#nd-command-argument">
+   2nd command + argument
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#exercice-list-all-the-files-into-fastqdirsr-directory-format-long">
+   EXERCICE : list all the files into fastqDirSR directory (format long)
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -304,6 +322,24 @@
    </em>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nd-command-option-ls-l">
+   2nd command + option
+   <em>
+    ls -l
+   </em>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nd-command-argument">
+   2nd command + argument
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-list-all-the-files-into-fastqdirsr-directory-format-long">
+   EXERCICE : list all the files into fastqDirSR directory (format long)
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -329,9 +365,7 @@
 <p><strong>pwd</strong> print the name of the curent directory (the full path)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
-cd /home/christine/Documents/Formation/TS/Home
-pwd
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> /home/christine/Documents/Formation/TS/Home
 </pre></div>
 </div>
 </div>
@@ -351,26 +385,71 @@ pwd
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
-ls
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">ls</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>great_red_spot.html
-great_red_spot.ipynb
-lesson1.md
-linux-Copy1.ipynb
-linuxHomework.ipynb
-linux.ipynb
-linuxLesson.ipynb
-linuxLessonPractical.ipynb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">fastqDirLR</span>/  <span class=" -Color -Color-Bold -Color-Bold-Blue">fastqDirSR</span>/  <span class=" -Color -Color-Bold -Color-Bold-Green">reference.fasta</span>*
 </pre></div>
 </div>
 </div>
 </div>
 <p>Kezako ?</p>
 <p>Add img arbo</p>
+</div>
+<div class="section" id="nd-command-option-ls-l">
+<h1>2nd command + option <em>ls -l</em><a class="headerlink" href="#nd-command-option-ls-l" title="Permalink to this headline">¶</a></h1>
+<p>ls -l : <em>list files with more information about each file</em> (long)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">ls</span> -l
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 1024
+drwxr-xr-x 2 christine christine    4096 févr.  3  2020 <span class=" -Color -Color-Bold -Color-Bold-Blue">fastqDirLR</span>/
+drwxr-xr-x 2 christine christine    4096 oct.   5 09:35 <span class=" -Color -Color-Bold -Color-Bold-Blue">fastqDirSR</span>/
+-rwxr-xr-x 1 christine christine 1037013 oct.   5  2018 <span class=" -Color -Color-Bold -Color-Bold-Green">reference.fasta</span>*
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="nd-command-argument">
+<h1>2nd command + argument<a class="headerlink" href="#nd-command-argument" title="Permalink to this headline">¶</a></h1>
+<p>with argument &lt;=&gt; directory path</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">ls</span> fastqDirLR
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Clone10-LR.fastq  Clone14-LR.fastq  Clone3-LR.fastq  Clone7-LR.fastq
+Clone11-LR.fastq  Clone15-LR.fastq  Clone4-LR.fastq  Clone8-LR.fastq
+Clone12-LR.fastq  Clone1-LR.fastq   Clone5-LR.fastq  Clone9-LR.fastq
+Clone13-LR.fastq  Clone2-LR.fastq   Clone6-LR.fastq
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercice-list-all-the-files-into-fastqdirsr-directory-format-long">
+<h1>EXERCICE : list all the files into fastqDirSR directory (format long)<a class="headerlink" href="#exercice-list-all-the-files-into-fastqdirsr-directory-format-long" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">ls</span> ...
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: impossible d&#39;accéder à &#39;...&#39;: Aucun fichier ou dossier de ce type
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> rpy2.ipython

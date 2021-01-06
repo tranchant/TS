@@ -13371,14 +13371,31 @@ Every user can run several programs at the same time</p>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>%%bash
-<span class="nb">cd</span> /home/christine/Documents/Formation/TS/Home
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">cd</span> /home/christine/Documents/Formation/TS/Home 
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/home/christine/Documents/Formation/TS/Home
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13393,11 +13410,10 @@ Every user can run several programs at the same time</p>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>%%bash
-<span class="nb">pwd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pwd</span>
 </pre></div>
 
     </div>
@@ -13410,13 +13426,15 @@ Every user can run several programs at the same time</p>
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>/home/christine/TS/day1
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;/home/christine/Documents/Formation/TS/Home&#39;</pre>
 </div>
+
 </div>
 
 </div>
@@ -13431,7 +13449,7 @@ Every user can run several programs at the same time</p>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13441,14 +13459,13 @@ Every user can run several programs at the same time</p>
 
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>%%bash
-ls
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">ls</span>
 </pre></div>
 
     </div>
@@ -13465,14 +13482,7 @@ ls
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>great_red_spot.html
-great_red_spot.ipynb
-lesson1.md
-linux-Copy1.ipynb
-linuxHomework.ipynb
-linux.ipynb
-linuxLesson.ipynb
-linuxLessonPractical.ipynb
+<pre><span class="ansi-blue-intense-fg ansi-bold">fastqDirLR</span>/  <span class="ansi-blue-intense-fg ansi-bold">fastqDirSR</span>/  <span class="ansi-green-intense-fg ansi-bold">reference.fasta</span>*
 </pre>
 </div>
 </div>
@@ -13489,6 +13499,125 @@ linuxLessonPractical.ipynb
 
 </div>
 </div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2nd-command-+-option-ls--l">2nd command + option <em>ls -l</em><a class="anchor-link" href="#2nd-command-+-option-ls--l">&#182;</a></h1><p>ls -l : <em>list files with more information about each file</em> (long)</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">ls</span> -l
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>total 1024
+drwxr-xr-x 2 christine christine    4096 févr.  3  2020 <span class="ansi-blue-intense-fg ansi-bold">fastqDirLR</span>/
+drwxr-xr-x 2 christine christine    4096 oct.   5 09:35 <span class="ansi-blue-intense-fg ansi-bold">fastqDirSR</span>/
+-rwxr-xr-x 1 christine christine 1037013 oct.   5  2018 <span class="ansi-green-intense-fg ansi-bold">reference.fasta</span>*
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2nd-command-+-argument-ls">2nd command + argument <em>ls</em><a class="anchor-link" href="#2nd-command-+-argument-ls">&#182;</a></h1><p>with argument &lt;=&gt; directory path</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">ls</span> fastqDirLR
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Clone10-LR.fastq  Clone14-LR.fastq  Clone3-LR.fastq  Clone7-LR.fastq
+Clone11-LR.fastq  Clone15-LR.fastq  Clone4-LR.fastq  Clone8-LR.fastq
+Clone12-LR.fastq  Clone1-LR.fastq   Clone5-LR.fastq  Clone9-LR.fastq
+Clone13-LR.fastq  Clone2-LR.fastq   Clone6-LR.fastq
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Kezako ?</p>
+<p>Add img arbo</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
