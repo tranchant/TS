@@ -7,7 +7,7 @@ This course MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSE
 
 # Program
 
-#### Day 1 
+##### Day 1 
 
 * Discover the NGS world ! 
 * Discovering the linux world throught jupyter world 
