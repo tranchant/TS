@@ -2,17 +2,17 @@
 
 ###### Day 1, Monday
 
-     * Discover the NGS world !
-        * Short presentation on the content of the course
-        * Short introduction on the 2nd generation of sequencing
+     Discover the NGS world !
+         Short presentation on the content of the course
+         Short introduction on the 2nd generation of sequencing
 
-    * Discovering the linux world throught jupyter world
-        * Presentation on using Linux for manipulationg data
-        * Presentation of Jupyter notebooks
-        * Practice in complete group
+     Discovering the linux world throught jupyter world
+         Presentation on using Linux for manipulationg data
+         Presentation of Jupyter notebooks
+         Practice in complete group
         
-    * ON YOUR OWN: 
-        *Counting number of reads, of files
+     ON YOUR OWN: 
+        Counting number of reads, of files
         Plot some basics stats
         Recover sequences of interest from a GFF (capture seq)
         Compare two files (BED)
