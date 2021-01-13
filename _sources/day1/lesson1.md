@@ -11,7 +11,7 @@
 
 ###### Discovering the linux world
 
-* Slides : [Linux Slides](https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html)
+* Slides : [Linux Slides]{:target="_blank"}(https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html)
 
 * jupyter book : [Linux](https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html)
 

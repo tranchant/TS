@@ -11,7 +11,7 @@ Online live sessions from Monday, January 18th to Friday, January 22nd, 2021; 13
 
 ## REQUIREMENTS
 
-Graduate or postgraduate degree in Biomedical or Life Sciences. All participants must bring their own personal laptop with the following software installed: Putty (Windows only), Filezilla and Komodo Edit. Webcam and headphones are strongly recommended, and a good internet connection.
+Graduate or postgraduate degree in Biomedical or Life Sciences. All participants must bring their own personal laptop with the following software installed: Filezilla and tablet. Webcam and headphones are strongly recommended, and a good internet connection.
 
 ## Contact
 
