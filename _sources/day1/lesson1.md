@@ -11,7 +11,13 @@
 
 ###### Discovering the linux world
 
-* Slides : [Linux Slides]{:target="_blank"}(https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html)
+* Environment :[Introduction to Jupyter and Biosphere Slides](https://tranchant.github.io/TransmittingScience/day1/biosphereIntro.slides.html)
+
+   start vm
+   create 1st jupyter book
+   launch command : wget wget https://bioinfo-storage.ird.fr/teachingNGS/jupyterBook/hello-day1.ypjb
+
+* Slides : [Linux Slides](https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html){:target="_blank"}
 
 * jupyter book : [Linux](https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html)
 
