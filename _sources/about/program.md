@@ -1,8 +1,8 @@
 # Program
 
-##### Day 1, Monday
+###### Day 1, Monday
 
-####### Discover the NGS world !
+     * Discover the NGS world !
         * Short presentation on the content of the course
         * Short introduction on the 2nd generation of sequencing
 
@@ -19,7 +19,7 @@
         Bonus: create a mini workflow with pipe
         Solo
 
-Day 2, Tuesday
+###### Day 2, Tuesday
 
     Discover the mapping and SNP calling methodology
         Presentation: What is a mapping ? How do I call NSP ?
@@ -33,7 +33,7 @@ Day 2, Tuesday
         Solo or small groups
 
 
-Day 3, Wednesday
+###### Day 3, Wednesday
 
     Understanding the results: Ok we have a SNP file but does it mean something real ?
         Vizualiazation of an alignment file with TABLET
@@ -50,7 +50,7 @@ Day 3, Wednesday
         Performing PCA on SNP data
         Solo or small groups
 
-Day 4, Thursday
+###### Day 4, Thursday
 
     Long reads 
         Introduction on the third generation, with a focus on ONT
@@ -71,7 +71,7 @@ Day 4, Thursday
         Solo or small groups
     
 
-Day 5, Friday
+###### Day 5, Friday
 
         Basic introduction on Assembly for Short & Long reads
         Difference short/long reads results & assembly comparison tools presentation
