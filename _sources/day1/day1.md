@@ -11,11 +11,11 @@
 
 ###### Discovering the linux world
 
-* Environment :[Introduction to Jupyter and Biosphere Slides](https://tranchant.github.io/TransmittingScience/day1/biosphereIntro.slides.html)
+* Environment :<a href="https://tranchant.github.io/TransmittingScience/day1/biosphereIntro.slides.html" target="_blank">Introduction to Jupyter and Biosphere Slides</a> 
 
-* Slides : [Linux Slides](https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html){target="_blank"}
+* Slides : <a href="https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html" target="_blank">Linux slides</a>
 
-* jupyter book : [Linux](https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html)
+* jupyter book : <a href="https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html" target="_blank">Linux Practical Jupyter Book</a> (html format) 
 
 
 ```{figure} https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg
