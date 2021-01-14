@@ -1,18 +1,21 @@
-# Day 1
+# Program
 
-###### Discover the NGS world !  __link__
+###### Discover the NGS world !  
 
-```{figure}  https://lh3.googleusercontent.com/proxy/1rPwglBhZPOjyZDv_HOvsDuZBBlHTXOj064R8O06vycCmluJzzlkSoEfiD2KPZBDuKeKQYk2XBnA02BrG0mKuqOe1qeyfaMgihpNTwk
----
-height: 100px
-name: imgCof
----
-```
+* Slides: __put link françois_
 
-###### Discovering the linux world throught jupyter world
+* Ref
 
-* [Linux Slides](https://tranchant.github.io/TS/linuxSlides.slides.html)
-* jupyter book:
+* More info
+
+
+###### Discovering the linux world
+
+* Environment :[Introduction to Jupyter and Biosphere Slides](https://tranchant.github.io/TransmittingScience/day1/biosphereIntro.slides.html)
+
+* Slides : [Linux Slides](https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html){:target="_blank"}
+
+* jupyter book : [Linux](https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html)
 
 
 ```{figure} https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg
@@ -22,10 +25,4 @@ name: imgHW
 ---
 ```
 
-* exercices compter nb reads / fastq stat
-
-* plot jupyter stat ?
-
-* quelles analyses ? gff - bedtools intersect localisation capture
-
-* Exercice qui tue/Bonus !!!! pipe
+* Practical : [Linux practice 1](https://tranchant.github.io/TransmittingScience/day1/linuxHomework)
