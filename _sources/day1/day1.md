@@ -13,7 +13,7 @@
 
 * Environment :[Introduction to Jupyter and Biosphere Slides](https://tranchant.github.io/TransmittingScience/day1/biosphereIntro.slides.html)
 
-* Slides : [Linux Slides](https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html){:target="_blank"}
+* Slides : [Linux Slides](https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html){target="_blank"}
 
 * jupyter book : [Linux](https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html)
 
