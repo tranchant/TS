@@ -138,11 +138,6 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="linuxHomework.html">
-   Linux Practice 1
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../day2/lesson2.html">
    Lesson2
   </a>
@@ -386,6 +381,124 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#let-s-practice-some-bioinformatics-tools-on-th-vm">
+   Let’s practice some bioinformatics tools on th vm
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-quickly-a-report-with-various-statiustics-about-fastq-file-with-ea-utils">
+     1 - Getting quickly a report with various statiustics about fastq file with ea-utils
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercice-1">
+       EXERCICE 1
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercice-2">
+       EXERCICE 2
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercice-3">
+       EXERCICE 3
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercice-4">
+       EXERCICE 4
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manipulation-of-gff-and-bed-files">
+     2 - Manipulation of
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       gff
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       bed
+      </span>
+     </code>
+     files
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#download-the-file-that-contains-the-rice-genome-annotation-gff-format-and-the-sequence-of-the-12-chromosomes-fasta-format-wget">
+       Download the file that contains the rice genome annotation (gff format) and the sequence of the 12 chromosomes (fasta format) -
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         wget
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#exercice">
+         EXERCICE :
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-information-about-gff-format">
+       More information about gff format
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#counts-the-number-of-gene-line-with-the-word-gene-column-3">
+         Counts the number of gene (line with the word “gene”, column 3)
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#search-and-count-for-motif-in-the-rice-genome-fasta">
+         Search and count for &gt; motif in the rice genome (fasta)
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#search-for-the-keyword-exon-in-the-gff-file">
+         Search for the keyword
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           exon
+          </span>
+         </code>
+         in the gff file
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id3">
+         EXERCICE
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#compare-two-bed-files">
+         Compare two bed files
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#recover-sequences-of-interest-from-a-gff-capture-seq">
+         Recover sequences of interest from a gff (capture seq)
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#compare-two-files">
+         Compare two files
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
 
         </nav>
@@ -615,13 +728,347 @@ fastqDirSR  linuxLessonPractical.ipynb  Untitled.ipynb
 <h1>Manipulating Files and Folders<a class="headerlink" href="#manipulating-files-and-folders" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Exercices<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p><strong>Be careful with the <code class="docutils literal notranslate"><span class="pre">rm</span></code> command, in linux, there is no bin !!!</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be careful with the <code class="docutils literal notranslate"><span class="pre">rm</span></code> command, in linux, there is no bin !!!</p>
+</div>
 <ul class="simple">
 <li><p>13 - Remove the file LINUX-TP.tar.gz within the directory mydatalocal - <code class="docutils literal notranslate"><span class="pre">rm</span></code></p></li>
 <li><p>14 - Create a directory called jupyterBook in the firectory mydatalocal - <code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
 <li><p>15 - Copy the file hello-day1.ipynb, myFirstJupyterbook.ipŷnb into the directory jupyterBook</p></li>
 <li><p>16 - Remove the file hello-day1.ipynb, myFirstJupyterbook.ipynb in mydatalocal directory - <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">command</span></code></p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+<hr> 
+</div>
+</div>
+<div class="section" id="let-s-practice-some-bioinformatics-tools-on-th-vm">
+<h1>Let’s practice some bioinformatics tools on th vm<a class="headerlink" href="#let-s-practice-some-bioinformatics-tools-on-th-vm" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-quickly-a-report-with-various-statiustics-about-fastq-file-with-ea-utils">
+<h2>1 - Getting quickly a report with various statiustics about fastq file with ea-utils<a class="headerlink" href="#getting-quickly-a-report-with-various-statiustics-about-fastq-file-with-ea-utils" title="Permalink to this headline">¶</a></h2>
+<p>This software runs quickly, faster than fastqc and the output can be parsed and formatted with some basics linux command ea-utils website</p>
+<p><code class="docutils literal notranslate"><span class="pre">fastq-stats</span> <span class="pre">-d</span> <span class="pre">fastq_path</span></code></p>
+<div class="section" id="exercice-1">
+<h3>EXERCICE 1<a class="headerlink" href="#exercice-1" title="Permalink to this headline">¶</a></h3>
+<p>Run the <code class="docutils literal notranslate"><span class="pre">fastq-stats</span></code> command on the following fastq file :  <em>Clone10-LR.fastq</em> in the directory <em>fastqDirLR</em></p>
+<p><code class="docutils literal notranslate"><span class="pre">BE</span> <span class="pre">CAREFUL</span> <span class="pre">:</span> <span class="pre">put</span> <span class="pre">the</span> <span class="pre">correct</span> <span class="pre">absolute</span> <span class="pre">or</span> <span class="pre">relative</span> <span class="pre">path</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">fastq</span> <span class="pre">file</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercice-2">
+<h3>EXERCICE 2<a class="headerlink" href="#exercice-2" title="Permalink to this headline">¶</a></h3>
+<p>For saving the output of a command to a file, we will use the <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> character</p>
+<img style="float: center;" width="500" height="500"  src="https://tranchant.github.io/TransmittingScience/img/linuxRedirection.png">
+<p>Execute the following commands</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fastq-stats -D  /ifb/data/mydatalocal/fastqDirLR/Clone9-LR.fastq 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fastq-stats -D  /ifb/data/mydatalocal/fastqDirLR/Clone9-LR.fastq  &gt; /ifb/data/mydatalocal/fastqDirLR/Clone9-LR.fastq-stats
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /ifb/data/mydatalocal/fastqDirLR/*fastq
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /ifb/data/mydatalocal/fastqDirLR/*fastq-stats
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat /ifb/data/mydatalocal/fastqDirLR/Clone9-LR.fastq-stats
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercice-3">
+<h3>EXERCICE 3<a class="headerlink" href="#exercice-3" title="Permalink to this headline">¶</a></h3>
+<p>Now, we want to run <code class="docutils literal notranslate"><span class="pre">fastq-stats</span></code> on all files in the <strong>fastqDirLR</strong></p>
+<ul class="simple">
+<li><p>we will use a ‘for loop’ that is a bash programming language statement which allows code to be repeatedly executed</p></li>
+</ul>
+<div class="highlight-for notranslate"><div class="highlight"><pre><span></span>do
+    instruction1
+    instruction2
+    ...
+done```
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /ifb/data/mydatalocal/fastqDirLR/
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> file in *<span class="p">;</span> <span class="k">do</span> 
+    <span class="nb">echo</span> <span class="s2">&quot; </span><span class="nv">$file</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> file in *fastq<span class="p">;</span> <span class="k">do</span> 
+    <span class="nb">echo</span> <span class="s2">&quot; File read : </span><span class="nv">$file</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> file in *fastq<span class="p">;</span> <span class="k">do</span> 
+    <span class="nb">echo</span> <span class="s2">&quot;File read : </span><span class="nv">$file</span><span class="s2"> &quot;</span><span class="p">;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;File to create : </span><span class="nv">$file</span><span class="s2">-stat \n&quot;</span><span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># PUT YOUR COMMAND WITH fastq-stats + redirection in a for loop</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercice-4">
+<h3>EXERCICE 4<a class="headerlink" href="#exercice-4" title="Permalink to this headline">¶</a></h3>
+<p>We will use a script python to merge all individual stat files generated onto a single csv file</p>
+<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">/ifb/data/mydatalocal/LINUX-TP/Script/parseFastqStat.py</span> <span class="pre">-dir</span> <span class="pre">PUT_DIR</span> <span class="pre">-f</span> <span class="pre">PUT_CSV_FILE</span></code> with :</p>
+<ul class="simple">
+<li><p>dir : directory that contains fastq-stat files (eg : /ifb/data/mydatalocal/fastqDirLR/)</p></li>
+<li><p>csv : csv file within all the stat were merged (eg : /ifb/data/mydatalocal/fastqDirLR.statsMerged.csv)</p></li>
+</ul>
+<p><strong>4.1 - Run the following command</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 /ifb/data/mydatalocal/LINUX-TP/Script/parseFastqStat.py -dir ifb/data/mydatalocal/fastqDirLR/ -f /ifb/data/mydatalocal/fastqDirLR.statsMerged.csv
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>python3: can&#39;t open file &#39;/ifb/data/mydatalocal/LINUX-TP/Script/parseFastqStat.py&#39;: [Errno 2] No such file or directory
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>4.2 - Checking step</strong></p>
+<p>Check that the file <code class="docutils literal notranslate"><span class="pre">/ifb/data/mydatalocal/fastqDirLR.statsMerged.csv</span></code> has been created <code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">cat</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>4.3 Plot some basics stats</strong></p>
+<p>Open the jupyter book fastq-stats (python kernel) to displays basic plots</p>
+<hr>
+</div>
+</div>
+<div class="section" id="manipulation-of-gff-and-bed-files">
+<h2>2 - Manipulation of <code class="docutils literal notranslate"><span class="pre">gff</span></code> and <code class="docutils literal notranslate"><span class="pre">bed</span></code> files<a class="headerlink" href="#manipulation-of-gff-and-bed-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Recover sequences of interest from a GFF (capture seq)</p></li>
+<li><p>Compare two files (BED)</p></li>
+</ul>
+<div class="section" id="download-the-file-that-contains-the-rice-genome-annotation-gff-format-and-the-sequence-of-the-12-chromosomes-fasta-format-wget">
+<h3>Download the file that contains the rice genome annotation (gff format) and the sequence of the 12 chromosomes (fasta format) - <code class="docutils literal notranslate"><span class="pre">wget</span></code><a class="headerlink" href="#download-the-file-that-contains-the-rice-genome-annotation-gff-format-and-the-sequence-of-the-12-chromosomes-fasta-format-wget" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>the gff file (all.gff3) is available here : http://rice.plantbiology.msu.edu/pub/data/Eukaryotic_Projects/o_sativa/annotation_dbs/pseudomolecules/version_7.0/all.dir</p></li>
+<li><p>the url of the  gff file (all.gff3) : http://rice.plantbiology.msu.edu/pub/data/Eukaryotic_Projects/o_sativa/annotation_dbs/pseudomolecules/version_7.0/all.dir/all.gff3</p></li>
+<li><p>the url of the fasta file (all.chr.con):
+http://rice.plantbiology.msu.edu/pub/data/Eukaryotic_Projects/o_sativa/annotation_dbs/pseudomolecules/version_7.0/all.dir/all.chrs.con</p></li>
+</ul>
+<div class="section" id="exercice">
+<h4>EXERCICE :<a class="headerlink" href="#exercice" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>1 - Go to the bank directory and type the correct wget command</p></li>
+<li><p>2 - Download the gff file (all.gff3) and the fasta file (all.chrs.con) in the bank directory</p></li>
+<li><p>3 - List the content of the bank directory</p></li>
+<li><p>4 - Count the line number of the gff file</p></li>
+<li><p>5 - Displays the firsts and lasts lines of the gff file</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR WGET COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="more-information-about-gff-format">
+<h3>More information about gff format<a class="headerlink" href="#more-information-about-gff-format" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>the gff (General Feature Format) file is a simple tab-delimited text file for describing genomic features</p></li>
+<li><p>see here to understand the gff format : https://www.ensembl.org/info/website/upload/gff.html</p></li>
+</ul>
+<div class="section" id="counts-the-number-of-gene-line-with-the-word-gene-column-3">
+<h4>Counts the number of gene (line with the word “gene”, column 3)<a class="headerlink" href="#counts-the-number-of-gene-line-with-the-word-gene-column-3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>We will use a new linux command <code class="docutils literal notranslate"><span class="pre">grep</span></code></p></li>
+<li><p>for example, we want to count the number of sequences in the fasta file just downloaded</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>head -n <span class="m">20</span> all.chrs.con
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>head: impossible d&#39;ouvrir &#39;/ifb/data/public/swissprot/current/flat/swissprot&#39; en lecture: Aucun fichier ou dossier de ce type
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tail -n <span class="m">20</span> all.chrs.con
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wc -l all.chrs.con
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="search-and-count-for-motif-in-the-rice-genome-fasta">
+<h4>Search and count for &gt; motif in the rice genome (fasta)<a class="headerlink" href="#search-and-count-for-motif-in-the-rice-genome-fasta" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep <span class="s2">&quot;&gt;&quot;</span> all.chrs.con
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep <span class="s2">&quot;&gt;&quot;</span> all.chrs.con -c
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="search-for-the-keyword-exon-in-the-gff-file">
+<h4>Search for the keyword <code class="docutils literal notranslate"><span class="pre">exon</span></code>  in the gff file<a class="headerlink" href="#search-for-the-keyword-exon-in-the-gff-file" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep <span class="s2">&quot;exon&quot;</span> all.gff3 <span class="p">|</span> head
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep <span class="s2">&quot;exon&quot;</span> all.gff3 -c
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h4>EXERCICE<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>1 - search/select only the lines with the gene keyword int the gff file - <code class="docutils literal notranslate"><span class="pre">grep</span></code></p></li>
+<li><p>2 - save in a new file (all_gene.gff3) all the lines with the gene keyword in the gff file all.gff3</p></li>
+</ul>
+</div>
+<div class="section" id="compare-two-bed-files">
+<h4>Compare two bed files<a class="headerlink" href="#compare-two-bed-files" title="Permalink to this headline">¶</a></h4>
+<p>We have found 3 genomic regions of interest from a previous analysis in our lab. The file qtl.bed contains informations about theses regions (chromosome, start, stop) / bed format</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat qtl.bed
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="recover-sequences-of-interest-from-a-gff-capture-seq">
+<h4>Recover sequences of interest from a gff (capture seq)<a class="headerlink" href="#recover-sequences-of-interest-from-a-gff-capture-seq" title="Permalink to this headline">¶</a></h4>
+<p>We want to extract sequences for each genomic region using <code class="docutils literal notranslate"><span class="pre">bedtools</span> <span class="pre">fastaFromBed</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">fastFromBed</span> <span class="pre">-fi</span> <span class="pre">sequences.fasta</span> <span class="pre">-bed</span> <span class="pre">bed</span> <span class="pre">file</span></code></p>
+<p>Link : https://bioweb.pasteur.fr/docs/modules/bedtools/2.17.0/content/fastafromBed.html</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND with -fi and -bed options
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND with -fi and -bedand -fo options
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fastaFromBed -fi all.chrs.con -bed qtl.bed -fo qtl.bed.fasta
+bedtools intersect -a all_gene.gff3 -b qtl.bed
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="compare-two-files">
+<h4>Compare two files<a class="headerlink" href="#compare-two-files" title="Permalink to this headline">¶</a></h4>
+<p>We want to extract annotation information (all_gene.gff3) for each genomic region (qtl.bed) using <code class="docutils literal notranslate"><span class="pre">bedtools</span> <span class="pre">intersect</span></code></p>
+<p>Link : https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
