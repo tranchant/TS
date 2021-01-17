@@ -15,7 +15,7 @@
 
 * Slides : <a href="https://tranchant.github.io/TransmittingScience/day1/linuxLesson.slides.html" target="_blank">Linux slides</a>
 
-* jupyter book : <a href="https://tranchant.github.io/TransmittingScience/day1/linuxLessonPractical.html" target="_blank">Linux Practical Jupyter Book</a> (html format) 
+* jupyter book : <a href="https://tranchant.github.io/TransmittingScience/day1/linuxLessonPracticalCloud.html" target="_blank">Linux Practical Jupyter Book</a> (html format) 
 
 
 ```{figure} https://www.potentialplusuk.org/wp-content/uploads/2020/07/Homework.jpeg
@@ -25,4 +25,4 @@ name: imgHW
 ---
 ```
 
-* On your own: [Linux practice 1](https://tranchant.github.io/TransmittingScience/day1/linuxHomework)
+* On your own: [Linux practice 1](https://tranchant.github.io/TransmittingScience/day1/linuxPractice-onYourOwn.html)
