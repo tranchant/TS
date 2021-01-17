@@ -28,7 +28,7 @@ name: imgHW
 ```
 
 * On your own:
-> <a href="https://tranchant.github.io/TransmittingScience/day1/linuxPractice-onYourOwn.html)" target="_blank">Linux On Your own - Jupyter Book (linux kernel)</a> (html format) 
-> <a href="https://tranchant.github.io/TransmittingScience/day1/fastq-stats.html)" target="_blank">Plot some basic statistics Jupyter Book (python kernel)</a> (html format) 
+> <a href="https://tranchant.github.io/TransmittingScience/day1/linuxPractice-onYourOwn.html" target="_blank">Linux On Your own - Jupyter Book (linux kernel)</a> (html format) 
+> <a href="https://tranchant.github.io/TransmittingScience/day1/fastq-stats.html" target="_blank">Plot some basic statistics Jupyter Book (python kernel)</a> (html format) 
 
 
