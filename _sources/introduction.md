@@ -1,5 +1,14 @@
 # Home
 
+## More information
+[Transmitting Science](https://www.transmittingscience.com/courses/genetics-and-genomics/manipulation-ngs-data-genomic-population-genetics-analyses/)
+
+## Contact
+
+courses@transmittingscience.com
+
+## Program
+
 ###### Day 1, Monday
 
      * Discover the NGS world !
@@ -79,9 +88,5 @@
         Group discussion on your own project and how to use what you learned during this week
         
 
-## Contact
 
-courses@transmittingscience.com
 
-## More information
-[Transmitting Science](https://www.transmittingscience.com/courses/genetics-and-genomics/manipulation-ngs-data-genomic-population-genetics-analyses/)
