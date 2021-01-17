@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First steps on Linux - On Your Own &#8212; NGS Data Analysis Training</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/Manipulation-of-NGS-Data-for-Genomic-and-Population-Genetics-Analyses-300x300.jpeg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">NGS Data Analysis Training</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduction.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  about this training
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/program.html">
+   Program
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/envt.html">
+   Environment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/thank.html">
+   Thank
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/license.html">
+   Copyright and license
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  DAY1
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="day1.html">
+   Program
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  DAY2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="linuxHomework.html">
+   Linux Practice 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../day2/lesson2.html">
+   Lesson2
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/day1/linuxPractice-onYourOwn.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tranchant/TS"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/tranchant/TS/master?urlpath=tree/day1/linuxPractice-onYourOwn.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   First steps on Linux - On Your Own
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-are-you-pwd">
+   where are you? -
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pwd
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-the-content-of-the-directory-mydatalocal-ls">
+   List the content of the directory mydatalocal -
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ls
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-the-content-of-the-directory-linux-tp-ls-l">
+   List the content of the directory  LINUX-TP -
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ls
+    </span>
+    <span class="pre">
+     -l
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-the-wildcard">
+   Working with the wildcard
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     *
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-a-wildcard">
+     What is a wildcard ?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-use-the-wildcard">
+     How to use the wildcard
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       *
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-the-following-commands-using-or-not-the-wildcad">
+     Try the following commands using (or not) the wildcad *
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moving-into-file-system-using-cd-and-ls-command">
+   Moving into file system using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     cd
+    </span>
+   </code>
+   and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ls
+    </span>
+   </code>
+   command
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercices">
+     EXERCICES
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-use-the-command-cd">
+     Let’s use the command
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       cd
+      </span>
+      <span class="pre">
+       ..
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     EXERCICES
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-commands">
+   Some Commands
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manipulating-files-and-folders">
+   Manipulating Files and Folders
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Exercices
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="first-steps-on-linux-on-your-own">
+<h1>First steps on Linux - On Your Own<a class="headerlink" href="#first-steps-on-linux-on-your-own" title="Permalink to this headline">¶</a></h1>
+<p>The program is :</p>
+<ul class="simple">
+<li><p>using linux commands seen previously and new linux commands</p></li>
+<li><p>Counting number of reads, of files</p></li>
+<li><p>Plot some basics stats</p></li>
+<li><p>Recover sequences of interest from a GFF (capture seq)</p></li>
+<li><p>Compare two files (BED)</p></li>
+<li><p>Bonus: create a mini workflow with pipe</p></li>
+</ul>
+</div>
+<div class="section" id="where-are-you-pwd">
+<h1>where are you? - <code class="docutils literal notranslate"><span class="pre">pwd</span></code><a class="headerlink" href="#where-are-you-pwd" title="Permalink to this headline">¶</a></h1>
+<p>Check if you are in mydatalocal directory</p>
+<img style="float: center;" width="200" height="200"  src="https://tranchant.github.io/TransmittingScience/img/arbo1.png"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND HERE
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PUT : commande introuvable
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="list-the-content-of-the-directory-mydatalocal-ls">
+<h1>List the content of the directory mydatalocal - <code class="docutils literal notranslate"><span class="pre">ls</span></code><a class="headerlink" href="#list-the-content-of-the-directory-mydatalocal-ls" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND HERE
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fastqDirLR  hello-day1.ipynb            reference.fasta
+fastqDirSR  linuxLessonPractical.ipynb  Untitled.ipynb
+</pre></div>
+</div>
+</div>
+</div>
+<img style="float: center;" width="200" height="200"  src="https://tranchant.github.io/TransmittingScience/img/arbo2.png"></div>
+<div class="section" id="list-the-content-of-the-directory-linux-tp-ls-l">
+<h1>List the content of the directory  LINUX-TP - <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span></code><a class="headerlink" href="#list-the-content-of-the-directory-linux-tp-ls-l" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND HERE
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AllEst.fasta  Bank  Data  Fasta  Script  transcritsAssembly.fasta
+</pre></div>
+</div>
+</div>
+</div>
+<img style="float: center;" width="500" height="500"  src="https://southgreenplatform.github.io/trainings//images/tpLinux/tp-arbo.png"><p><strong>EXERCICES:</strong></p>
+<ul class="simple">
+<li><p>1 - List the content of the directory Fasta by using its absolute path in first then its relative path - <code class="docutils literal notranslate"><span class="pre">ls</span></code> command</p></li>
+<li><p>2 - List the content of the directory Data with the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and the option <code class="docutils literal notranslate"><span class="pre">-R</span></code></p></li>
+<li><p>3 - List the content of the directory Bank with the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and the option <code class="docutils literal notranslate"><span class="pre">-al</span></code> or <code class="docutils literal notranslate"><span class="pre">-a</span> <span class="pre">-l</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="working-with-the-wildcard">
+<h1>Working with the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code><a class="headerlink" href="#working-with-the-wildcard" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-a-wildcard">
+<h2>What is a wildcard ?<a class="headerlink" href="#what-is-a-wildcard" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>It is a character that can be used as a substitute for any of a class of characters in a search</p></li>
+<li><p>Can be used with numerous linux commands</p></li>
+</ul>
+</div>
+<div class="section" id="how-to-use-the-wildcard">
+<h2>How to use the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code><a class="headerlink" href="#how-to-use-the-wildcard" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>* can represent zero characters, all single characters or any string</p></li>
+</ul>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">*fastq</span></code> will display <strong>only the files ended by fastq</strong> in the directory where I am working1</p>
+</div>
+</div>
+<div class="section" id="try-the-following-commands-using-or-not-the-wildcad">
+<h2>Try the following commands using (or not) the wildcad *<a class="headerlink" href="#try-the-following-commands-using-or-not-the-wildcad" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /ifb/data/mydatalocal/LINUX-TP/Bank
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ls: impossible d&#39;accéder à &#39;/ifb/data/mydatalocal/LINUX-TP/Bank&#39;: Aucun fichier ou dossier de ce type
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /ifb/data/mydatalocal/LINUX-TP/Bank/*fasta
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bash: /ifb/data/mydatalocal/LINUX-TP/Bank/*fasta: Aucun fichier ou dossier de ce type
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>EXERCICES</strong></p>
+<ul class="simple">
+<li><p>4 - List the content of the directory T-coffee. Are there only fasta files ? - <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">command</span></code></p></li>
+<li><p>5 - List only the files starting by sample (in the directory T-coffee ) - <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">command</span> <span class="pre">&amp;</span> <span class="pre">*</span></code></p></li>
+<li><p>6 - List only the files with the fasta extension (in the directory T-coffee ) - <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">command</span> <span class="pre">&amp;</span> <span class="pre">*</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="moving-into-file-system-using-cd-and-ls-command">
+<h1>Moving into file system using <code class="docutils literal notranslate"><span class="pre">cd</span></code> and <code class="docutils literal notranslate"><span class="pre">ls</span></code> command<a class="headerlink" href="#moving-into-file-system-using-cd-and-ls-command" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exercices">
+<h2>EXERCICES<a class="headerlink" href="#exercices" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>7 - Go to the directory <em>Script</em> and check in the prompt you have changed correctly your working directory <code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
+<li><p>8 - List the dir content with <code class="docutils literal notranslate"><span class="pre">ls</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="let-s-use-the-command-cd">
+<h2>Let’s use the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code><a class="headerlink" href="#let-s-use-the-command-cd" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>         : go one folder up</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">../..</span></code>      : go two folders up</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>EXERCICES<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>9 - Go to the <em>Fasta directory</em> using <code class="docutils literal notranslate"><span class="pre">../</span></code></p></li>
+<li><p>10 - Go to the <em>Fastq directory</em>. From this directory, and without any change in your working dir, list what’s in <em>samBam directory</em></p></li>
+<li><p>11 - List <em>vcf directory</em> using <code class="docutils literal notranslate"><span class="pre">-R</span> <span class="pre">option</span></code>. What is there in this dir ?</p></li>
+<li><p>12 - Come back to the <em>mydatalocal directory</em></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PUT YOUR COMMAND
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="some-commands">
+<h1>Some Commands<a class="headerlink" href="#some-commands" title="Permalink to this headline">¶</a></h1>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>pwd</p></td>
+<td class="text-align:left"><p>Display the full path of the current directory</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>ls</p></td>
+<td class="text-align:left"><p>List all files/directories</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>cd DIR_NAME</p></td>
+<td class="text-align:left"><p>Change the working directory</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>rm nom_fichier</p></td>
+<td class="text-align:left"><p>Remove a directory</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>cp file1 file2</p></td>
+<td class="text-align:left"><p>Make a copy of file1 and calls it file2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>cp FILE_NAME DIR_NAME</p></td>
+<td class="text-align:left"><p>Copy the file FILE_NAME in the directory DIR_NAME</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>cp FILE DIR/NEW_FILE</p></td>
+<td class="text-align:left"><p>Mix of 2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="manipulating-files-and-folders">
+<h1>Manipulating Files and Folders<a class="headerlink" href="#manipulating-files-and-folders" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Exercices<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Be careful with the <code class="docutils literal notranslate"><span class="pre">rm</span></code> command, in linux, there is no bin !!!</strong></p>
+<ul class="simple">
+<li><p>13 - Remove the file LINUX-TP.tar.gz within the directory mydatalocal - <code class="docutils literal notranslate"><span class="pre">rm</span></code></p></li>
+<li><p>14 - Create a directory called jupyterBook in the firectory mydatalocal - <code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
+<li><p>15 - Copy the file hello-day1.ipynb, myFirstJupyterbook.ipŷnb into the directory jupyterBook</p></li>
+<li><p>16 - Remove the file hello-day1.ipynb, myFirstJupyterbook.ipynb in mydatalocal directory - <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">command</span></code></p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "tranchant/TS",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "bash"
+        },
+        kernelOptions: {
+            kernelName: "bash",
+            path: "./day1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'bash'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Christine Tranchant-Dubreuil and François Sabot<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

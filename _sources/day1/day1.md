@@ -25,4 +25,4 @@ name: imgHW
 ---
 ```
 
-* On your own: [Linux practice 1](https://tranchant.github.io/TransmittingScience/day1/linuxPractice-onYourOwn.html)
+* On your own: [Linux on your own](https://tranchant.github.io/TransmittingScience/day1/linuxPractice-onYourOwn.html)
