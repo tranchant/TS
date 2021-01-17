@@ -2,11 +2,8 @@
 
 ###### Discover the NGS world !  
 
-* Slides: __put link françois_
+* Slides: __put link_
 
-* Ref
-
-* More info
 
 
 ###### Discovering the linux world

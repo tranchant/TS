@@ -1,7 +1,11 @@
 # Home
 
-## More information
-[Transmitting Science](https://www.transmittingscience.com/courses/genetics-and-genomics/manipulation-ngs-data-genomic-population-genetics-analyses/)
+## MANIPULATION OF NGS DATA FOR GENOMIC AND POPULATION GENETICS ANALYSES
+
+* Course – 3rd Edition
+* January 18th-22nd, 2021
+
+<a href="https://www.transmittingscience.com/courses/genetics-and-genomics/manipulation-ngs-data-genomic-population-genetics-analyses/" target="_blank">Transmitting Science Page</a>
 
 ## Contact
 
